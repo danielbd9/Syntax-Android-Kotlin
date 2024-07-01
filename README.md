@@ -5,5 +5,5 @@ This repository contains a collection of Kotlin code examples demonstrating vari
 Clone this repository to your local machine:
 
 ```sh
-git clone https://github.com/yourusername/kotlin-syntax-examples.git
+git clone [https://github.com/yourusername/kotlin-syntax-examples.git](https://github.com/danielbd9/Syntax-Android-Kotlin.git)
 cd kotlin-syntax-examples
