@@ -1,4 +1,4 @@
-# SyntaxKotlin
+# Sample Syntax Kotlin
 
 <p>Inline function</p>
 <p>Higher-order function</p>
