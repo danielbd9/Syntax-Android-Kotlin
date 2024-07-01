@@ -1,19 +1,9 @@
-# Sample Syntax Kotlin
+# Kotlin Syntax Examples
 
-<p>Inline function</p>
-<p>Higher-order function</p>
-<p>Whith</p>
-<p>Let</p>
-<p>Run</p>
-<p>Apply</p>
-<p>Singleton pattern</p>
-<p>Array</p>
-<p>For</p>
-<p>Foreach</p>
-<p>While</p>
-<p>Mapp</p>
-<p>When</p>
-<p>Interface</p>
-<p>AbstractClass</p>
-<p>Lazy</p>
-<p>Formatted string</p>
+This repository contains a collection of Kotlin code examples demonstrating various language features and concepts. The examples include the usage of higher-order functions, lazy initialization, extension functions, and more.
+
+Clone this repository to your local machine:
+
+```sh
+git clone https://github.com/yourusername/kotlin-syntax-examples.git
+cd kotlin-syntax-examples
