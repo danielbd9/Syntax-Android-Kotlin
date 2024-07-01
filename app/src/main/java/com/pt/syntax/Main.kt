@@ -1,7 +1,10 @@
 package com.pt.syntax
 
+import com.pt.syntax.examples.CalculatorClass
 import com.pt.syntax.examples.MyAbstractClass
 import com.pt.syntax.examples.RectangleClass
+import java.lang.Integer.sum
+import kotlin.reflect.KFunction3
 
 var x: Int = 5
 var y: Int = 5
@@ -26,7 +29,11 @@ fun main() {
     // Create and manipulate a map of items
     val items = listOf("apple", "banana", "kiwifruit")
     val itemsMap = mutableMapOf("apple" to 1, "banana" to 2, "kiwifruit" to 3)
+
+    // Print the value associated with the key "apple"
     println(itemsMap["apple"])
+
+    // Add a new item to the map
     itemsMap["banana"] = 3
 
     // Iterate over the map and print its contents
@@ -43,10 +50,6 @@ fun main() {
     if ("apple" in items) {
         println("apple is fine")
     }
-
-    // Print a character
-    val aChar = 'a'
-    println(aChar)
 
     // Call various functions to demonstrate functionality
     listFruits()
@@ -130,10 +133,10 @@ fun main() {
     child.parentMethod()
 
     // Call a high-order function example
-    val sumResult = highOrderFunction(::sum, 3, 5)
+    val sumResult = highOrderFunction(CalculatorClass::sum, 3, 5)
     println("Sum using highOrderFunction: $sumResult")
 
-    val subResult = highOrderFunction(::subtract, 3, 5)
+    val subResult = highOrderFunction(CalculatorClass::subtract, 3, 5)
     println("Sum using highOrderFunction: $subResult")
 
     // Check string length using the is-check example
@@ -145,8 +148,8 @@ fun main() {
 }
 
 // Higher-order function that performs an operation on two integers
-fun highOrderFunction(operation: (Int, Int) -> Int, a: Int, b: Int): Int {
-    return operation(a, b)
+fun highOrderFunction(operation: KFunction3<CalculatorClass, Int, Int, Int>, a: Int, b: Int): Int {
+    return operation(CalculatorClass(), a, b)
 }
 
 // Inline function to measure execution time of a block of code
@@ -205,15 +208,6 @@ fun String.convertCamelCaseToSpace(): String {
 object Resource {
     const val NAME = "Name"
 }
-
-// Function to sum two integers
-fun sum(x: Int, y: Int) = x + y
-
-// Function to subtract two integers
-fun subtract(x: Int, y: Int) = x - y
-
-// Function to return the maximum of two integers
-fun maxOf(a: Int, b: Int) = if (a > b) a else b
 
 // Function to list fruits
 fun listFruits() {
