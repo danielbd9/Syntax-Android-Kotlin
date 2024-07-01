@@ -1,7 +1,7 @@
 # SyntaxKotlin
 
-Inline function
-Higher-order function
+<p>Inline function</p>
+<p>Higher-order function</p>
 Whith
 Let
 Run
